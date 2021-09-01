@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+   /* CSS Reset */
+   body{
+       color: white;
+       margin: 0px;
+       padding: 0px;
+       background: url('image/abs.jpg');
+       height: 100px;
+       font-family: 'Prociono', 'cursive' ;
+   }
+   .left{   
+       /*border: 2px solid red;*/
+       display: inline-block;
+       position: absolute;
+       left: 34px;
+       top: 20px;
+   }
+   .left img{
+            width: 70px;
+   }
+   .left div{
+       text-align:center ;
+       line-height: 26px;
+       text-align: center;
+   }
+   .mid{
+        display: block ;
+        width: 50%;
+        margin: 10px auto;
+        /*border: 2px solid green;*/
+        
+   }
+   .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+    
+   }
+   .navbar{
+       display: inline-block;
+       
+   }
+
+   .navbar li{
+       display: inline-block;
+       font-size: 25px;
+   }
+   .navbar li a{
+       color: white;
+       text-decoration: none ;
+       padding: 15px 15px;
+   }
+
+   .navbar li a:hover, .navbar li a.active{
+       color: gray; 
+       text-decoration: underline ;
+   }
+   .btn{
+       margin: 0px 9px;
+       color: white;
+       background-color: black;
+       padding: 4px 14px;
+       border: 2px solid grey;
+       border-radius: 10px;
+       font-size: 20px;
+        cursor: pointer;
+
+   }
+   .btn:hover{
+       background-color: rgb(51, 50, 50);
+   }
+   .container{
+   /* border: 2px solid white;*/
+    margin: 72px;
+    padding: 2%;
+    width: 44%;
+    border-radius: 22px;
+
+   }
+
+   .form-group input{
+
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+   }
+   .container h1{
+        text-align: center;
+   }
+   .container button{
+        display: block;
+        width: 86%;
+        margin: 20px auto;
+   }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo-->
+        <div class="left">
+                <img src="image/logo.png" alt="">
+                <div>Riya Fitness</div>
+
+        </div>
+
+        <!-- Mid box navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Bardoli now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+             <div class="form-group">
+                 <input type="text" name="" placeholder="Enter your Age">
+                <div class="form-group">
+                  <input type="text" name="" placeholder="Enter your Gender">
+                  <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
